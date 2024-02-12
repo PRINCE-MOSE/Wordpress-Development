@@ -534,6 +534,21 @@
       overflow: hidden;
       word-wrap: normal !important; /* Many screen reader and browser combinations announce broken words as they would appear visually. */
   }
+  .header_nav{
+    background-color: #21759b;
+    color: #a7ff91;
+    padding: 10px;
+    font-size: 16px;
+    margin: auto;
+    text-align: right;
+    align-items: end;
+    border-radius: 5px;
+    
+  }
+  .header_nav input, button{
+    border-radius: 3px;
+    border: none;
+  }
   
   .screen-reader-text:focus {
       background-color: #f1f1f1;
