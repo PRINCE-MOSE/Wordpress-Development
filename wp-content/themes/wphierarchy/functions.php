@@ -27,4 +27,21 @@ register_nav_menus([
 
 ]);
 
+// <!-- Widgets or Sidebars areas -->
+
+function wphierarchy_widgets_init() {
+    register_sidebar( [
+        'name' => esc_html__('Main Sidebar', 'wphierarchy' ),
+        'id' => 'main-sidebar',
+        'description' => esc_html( 'Add Widgets for main sidebar here', 'wphierarchy' ),
+        'before_widget' => '<section class="widget">',
+        'after_widget' => '<section>',
+        'before_title' => '<h2 class="widget-title">',
+        'after_title' => '</h2>',
+
+    ]);
+}
+
+add_action( 'widgets_init', 'wphierarchy_widgets_init' );
 ?>
+
